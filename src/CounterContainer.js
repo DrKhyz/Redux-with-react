@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-const mapStateToProps = state => ({
-  count: state,
+const mapStateToProps = count => ({
+  count: count,
 })
 
 const mapDispatchToProps = dispatch => ({

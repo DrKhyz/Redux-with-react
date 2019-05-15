@@ -1,17 +1,17 @@
-const counterReducer = (state = 0, action) => {
+const counterReducer = (count = 0, action) => {
   switch (action.type) {
     case 'ADD':
-      return state + 1
+      return count + 1
     case 'ADDTEN':
-      return state + 10
+      return count + 10
     case 'REMOVE':
-      return state - 1
+      return count - 1
     case 'REMOVETEN':
-      return state - 10
+      return count - 10
     case 'RESET':
-      return (state = 0)
+      return (count = 0)
     default:
-      return state
+      return count
   }
 }
 export default counterReducer
